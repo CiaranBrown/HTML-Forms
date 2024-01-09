@@ -10,7 +10,7 @@
     <h1>Contact</h1>
 
     <!-- Your form goes here -->
-    <form action="https://learn-forms.netlify.com/submit/part2" type="submit">
+    <form action="https://learn-forms.netlify.com/submit/part3" type="submit">
       <label for="name">Name:</label>
       <input type="text" name="name" />
 
@@ -18,7 +18,19 @@
       <input type="email" name="email" />
 
       <label for="telephone">Telephone:</label>
-      <input type="telephone" name="telephone" />
+      <input type="tel" name="tel" />
+
+      <fieldset>
+        <legend>Please select your preferred contact method:</legend>
+        <input type="radio" id="contactOption1" name="contact" value="email" />
+        <label for="contactOption1">Email</label>
+
+        <input type="radio" id="contactOption2" name="contact" value="phone" />
+        <label for="contactOption2">Telephone</label>
+
+        <input type="radio" id="contactOption3" name="contact" value="mail" />
+        <label for="contactOption3">Post</label>
+      </fieldset>
 
       <label for="message">Message:</label>
       <textarea name="message"></textarea>
